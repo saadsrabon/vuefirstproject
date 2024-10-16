@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Hello World!</h2>
+    
+    <div id="app">
+        <input v-model="enteredValue"  type="text">
+        <button v-on:click="addGoal">Add goal</button>
+        <ul>
+            <li v-for="goal in goals">{{goal}}</li>
+        </ul>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
