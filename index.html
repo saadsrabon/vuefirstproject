@@ -9,26 +9,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-  
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
   </head>
   <body>
+    <header>
+      <h1>Events</h1>
+    </header>
     <section id="assignment">
-      <!-- 1) Output your name -->
-      <h2 >{{name}}</h2>
-      <!-- 2) Output your age -->
-      <p>YOUR AGE : {{age}}</p>
-      <!-- 3) Output your age + 5 -->
-      <p>YOUR AGE in 5 years : {{age+5}}</p>
-      <!-- 4) Output a random number (0 to 1) -->
-      <p>Favorite Number: {{random()}}</p>
-      <div>
-        <!-- 5) Display some image you found via Google -->
-        <img v-bind:src="image" />
-      </div>
-      <!-- 6) Prepopulate the input field with your name via the "value" attribute -->
-      <input v-bind:value="name" type="text" />
+      <h2>Event Practice</h2>
+      <!-- 1) Show an alert (any text of your choice) when the button is pressed -->
+      <button>Show Alert</button>
+      <hr />
+      <!-- 2) Register the user input on "keydown" and output it in the paragraph (hint: event.target.value helps) -->
+      <input type="text" />
+      <p>OUTPUT</p>
+      <hr />
+      <!-- 3) Repeat 2) but only output the entered value if the ENTER key was pressed -->
+      <input type="text" />
+      <p>OUTPUT</p>
     </section>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <script src="./app.js"></script>
   </body>
 </html>
